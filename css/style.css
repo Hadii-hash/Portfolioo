@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #dddddd;
+    color: #222;  
+}
+
+
+header {
+    background-color: #cccccc;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+
+nav {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav h2 {
+    margin: 0;
+}
+
+
+nav a {
+    color: #222;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+.intro {
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #bbbbbb;
+}
+
+
+.intro h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+
+.intro h3 {
+    color: #555;
+    font-weight: normal;
+}
+
+
+.intro p {
+    max-width: 550px;
+    line-height: 1.6;
+    color: #555;
+}
+
+
+.intro a {
+    color: #222;
+    margin-right: 20px;
+}
+
+
+.intro img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+section {
+    padding: 45px 0;
+    border-bottom: 1px solid #bbbbbb;
+}
+
+
+section h2 {
+    margin-bottom: 25px;
+}
+
+
+section p {
+    color: #555;
+    line-height: 1.6;
+}
+
+
+.project {
+    padding: 20px 0;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+
+.project:last-child {
+    border-bottom: none;
+}
+
+
+.project h3 {
+    margin-bottom: 5px;
+}
+
+
+.project a {
+    color: #222;
+    font-weight: bold;
+}
+
+
+footer {
+    padding: 30px;
+    text-align: center;
+    color: #666;
+}
+
+
+@media screen and (max-width: 650px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .intro {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 30px;
+    }
+    .intro h1 {
+        font-size: 35px;
+    }
+
+}
