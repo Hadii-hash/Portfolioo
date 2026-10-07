@@ -1,182 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abdul Hadi | Developer Profile</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    }
-
-    body {
-      background-color: #0d1117;
-      color: #c9d1d9;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 20px;
-    }
-
-    .card-container {
-      background: #161b22;
-      border: 1px solid #30363d;
-      border-radius: 12px;
-      width: 100%;
-      max-width: 400px;
-      padding: 30px;
-      text-align: center;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-    }
-
-    .avatar {
-      width: 80px;
-      height: 80px;
-      background: linear-gradient(135deg, #6366f1, #a855f7);
-      color: white;
-      font-size: 1.8rem;
-      font-weight: bold;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 15px auto;
-    }
-
-    h1 {
-      font-size: 1.5rem;
-      color: #f0f6fc;
-    }
-
-    .tagline {
-      font-size: 0.9rem;
-      color: #8b949e;
-      margin-top: 5px;
-    }
-
-    .skills-section {
-      margin: 25px 0;
-    }
-
-    .skills-section h3 {
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #8b949e;
-      margin-bottom: 10px;
-    }
-
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      justify-content: center;
-    }
-
-    .tag {
-      background: #21262d;
-      border: 1px solid #30363d;
-      color: #58a6ff;
-      padding: 4px 10px;
-      border-radius: 20px;
-      font-size: 0.8rem;
-    }
-
-    .counter-section {
-      margin-bottom: 20px;
-    }
-
-    #likeBtn {
-      background: transparent;
-      border: 1px solid #30363d;
-      color: #c9d1d9;
-      padding: 8px 16px;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-
-    #likeBtn:hover {
-      background: #21262d;
-      border-color: #8b949e;
-    }
-
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .btn {
-      text-decoration: none;
-      background: #238636;
-      color: white;
-      padding: 10px;
-      border-radius: 6px;
-      font-weight: 600;
-      font-size: 0.9rem;
-      transition: background 0.2s ease;
-    }
-
-    .btn:hover {
-      background: #2ea043;
-    }
-
-    .btn-secondary {
-      background: #21262d;
-      color: #c9d1d9;
-      border: 1px solid #30363d;
-    }
-
-    .btn-secondary:hover {
-      background: #30363d;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadi Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
+
 <body>
+    <header>
+        <nav>
+            <h2>Abdul Hadi</h2>
+            <div>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
 
-  <div class="card-container">
-    <div class="profile-header">
-      <div class="avatar">AH</div>
-      <h1>Abdul Hadi</h1>
-      <p class="tagline">Computer Engineering Student & Developer</p>
-    </div>
+    <main>
+        <div class="intro">
+            <div>
+                <h1>Hello, I'm Hadi</h1>
+                <h3>Computer Engineering Student @ Epitech</h3>
+                <p>
+                    I am interested in programming, artificial
+                    intelligence, robotics and computer vision
+                </p>
 
-    <div class="skills-section">
-      <h3>Tech & Skills</h3>
-      <div class="tags">
-        <span class="tag">C++</span>
-        <span class="tag">Python</span>
-        <span class="tag">ROS2 & Robotics</span>
-        <span class="tag">n8n & Docker</span>
-        <span class="tag">OpenCV & YOLO</span>
-      </div>
-    </div>
+                <p>
+                    I like building projects and learning new
+                    technologies
+                </p>
 
-    <div class="counter-section">
-      <button id="likeBtn">⚡ Send High-Five <span id="likeCount">0</span></button>
-    </div>
+                <a href="https://github.com/hadi-ce04" target="_blank">
+                    My GitHub
+                </a>
 
-    <div class="links">
-      <a href="https://github.com/hadi-ce04" target="_blank" rel="noopener noreferrer" class="btn">GitHub Profile</a>
-      <a href="mailto:your-email@example.com" class="btn btn-secondary">Contact Me</a>
-    </div>
-  </div>
+                <a
+                    href="https://www.linkedin.com/in/abdul-hadi-57281732a"
+                    target="_blank"
+                >
+                    LinkedIn
+                </a>
 
-  <script>
-    let count = 0;
-    const likeBtn = document.getElementById('likeBtn');
-    const likeCount = document.getElementById('likeCount');
+            </div>
 
-    likeBtn.addEventListener('click', () => {
-      count++;
-      likeCount.textContent = count;
-    });
-  </script>
+            <img
+                src="https://i.ibb.co/t6hj1tP/8415f1b9-ff21-4114-a434-3001c0a696e6.jpg"
+                alt="Hadi"
+            >
+        </div>
+
+        <section>
+
+            <h2>About Me</h2>
+
+            <p>
+                I am studying Computer Engineering and I enjoy
+                working on both software and hardware projects!
+            </p>
+
+            <p>
+                My main interests are AI, robotics, computer vision,
+                embedded systems and automation.
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2>My Skills</h2>
+
+            <p>
+                C++ | Python | JavaScript | TypeScript
+            </p>
+
+            <p>
+                HTML | CSS | React
+            </p>
+
+            <p>
+                OpenCV | YOLO | ROS2
+            </p>
+
+            <p>
+                Git | GitHub | Docker | Linux
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2>My Projects</h2>
+
+            <div class="project">
+
+                <h3>StudySync</h3>
+
+                <p>
+                    A web application for students with study
+                    sessions, tasks and collaboration features
+                </p>
+
+                <p>
+                    React | TypeScript | WebSockets
+                </p>
+
+                <a
+                    href="https://github.com/hadi-ce04/studysync"
+                    target="_blank"
+                >
+                    GitHub
+                </a>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>Robot Vision</h3>
+
+                <p>
+                    A project using a camera and computer vision
+                    for real-time object detection.
+                </p>
+
+                <p>
+                    Python | YOLO | OpenCV
+                </p>
+
+                <a
+                    href="https://github.com/hadi-ce04"
+                    target="_blank"
+                >
+                    GitHub
+                </a>
+
+            </div>
+
+            <div class="project">
+
+                <h3>SentinelGrid</h3>
+
+                <p>
+                    An experimental project related to automation
+                    and intelligent systems.
+                </p>
+
+                <p>
+                    Python | Automation
+                </p>
+
+                <a
+                    href="https://github.com/hadi-ce04"
+                    target="_blank"
+                >
+                    GitHub
+                </a>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2>Interests</h2>
+
+            <p>
+                Robotics, Artificial Intelligence, Computer Vision,
+                Embedded Systems and Automation.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Abdul Hadi 
+        </p>
+
+    </footer>
 
 </body>
+
 </html>
